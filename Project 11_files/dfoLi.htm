@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://s.codepen.io/pvazquez/fullpage/dfoLi -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <!--
+Copyright (c) 2013 by Philip Vazquez (http://codepen.io/pvazquez/pen/dfoLi)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+  <title>CodePen - A Pen by pvazquez</title>
+
+  <style>img{width:500px;height:300px}
+
+.photo1{
+  transition:all 1s ease;
+}
+
+.photo1:hover{
+  -webkit-transform:rotate(180deg);
+  -webkit-transform-origin: middle ;
+  -webkit-transform-duration:.5s;
+}
+.photo2{
+  transition:all 1s ease;
+}
+.photo2:hover {-webkit-transform:scale(1.5);
+}
+.photo3{
+  transition:all 1s ease;
+}
+.photo3:hover{
+  -webkit-transform:skewX(20deg)
+}
+
+.box1 {
+  width:250px;
+  height:250px;
+  background-color:orange;
+  -webkit-box-shadow: 10px 10px 5px black;
+  transition:all 1s ease;
+}
+
+.box1:hover {
+  background-color:black;
+  -webkit-box-shadow: 10px 10px 5px orange;
+}
+
+.box2{
+  width:250px;
+  height:250px;
+  background-color:green;
+  transition:all 1s ease;
+}
+
+.box2:hover{
+  -webkit-transform:rotateZ(25deg)scale(1.05);
+  -webkit-transform-origin: top right ;
+ }</style>
+
+  <script>
+    window.open    = function(){};
+    window.print   = function(){};
+    // Support hover state for mobile.
+    if (false) {
+      window.ontouchstart = function(){};
+    }
+  </script>
+
+</head>
+
+<body>
+
+  
+
+
+<meta name="description" content="project 11 ">
+<title>Transition</title>
+<link rel="stylesheet" href="http://s.codepen.io/pvazquez/fullpage/project1.css" src="project1.css">
+
+
+  
+    <h1>Project 11</h1>
+
+    <h2>Photo 1</h2>
+
+   <div class="photo1">
+     <img src="ndflag.jpg" alt="photo1"> 
+    </div>
+
+    <h2>Photo 2</h2>
+    <div class="photo2">
+      <img src="600x325" alt="photo2">
+    </div>
+
+    <h2>Photo 3</h2>
+    <div class="photo3">
+      <img src="2013-notre-dame-irish-football-uniforms-620x382.jpg" alt="photo3">
+    </div>
+
+    <h2>Box 1</h2>
+
+    <div class="box1"></div>
+
+     <h2>Box 2</h2>
+
+    <div class="box2"></div>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+
+
+
+</body></html>
